@@ -1,0 +1,14 @@
+%h1 All Games
+
+%table#games
+	%thead
+		%tr
+			%th Game Title
+			%th ESRB Rating
+			%th Release Date
+			%th More Info
+	%tbody
+		-	@games.each do |game|
+			= render :partial=>'game', :collection=>@games
+
+= link_to 'Add Game', new_game_path

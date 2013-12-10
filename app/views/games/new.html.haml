@@ -1,0 +1,7 @@
+%h2 Create New Game
+
+= form_tag '/games', :method => :post do
+
+	= render :partial => 'game_form'
+
+	= submit_tag 'Save Changes'

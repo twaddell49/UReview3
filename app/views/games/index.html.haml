@@ -4,7 +4,7 @@
 	%thead
 		%tr
 			%th Game Title
-			%th ESRB Rating
+			%th     ESRB Rating
 			%th Release Date
 			%th More Info
 	%tbody
@@ -12,3 +12,4 @@
 			= render :partial=>'game', :collection=>@games
 
 = link_to 'Add Game', new_game_path
+

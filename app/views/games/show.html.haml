@@ -1,6 +1,7 @@
 %h2 #{@game.title}
 
 %ul#details
+	=image_tag(@game.image_location)
 	%li
 		ESRB Rating:
 		= @game.esrb

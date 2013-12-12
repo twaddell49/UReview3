@@ -1,5 +1,5 @@
 class Game < ActiveRecord::Base
-	attr_accessible :title, :esrb, :description, :release_date, :console, :players
+	attr_accessible :title, :esrb, :description, :release_date, :console, :players, :image_location
 
 	def Game.all_esrb
 		esrb = ['E', 'T', 'M', 'A']

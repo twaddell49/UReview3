@@ -9,18 +9,18 @@
 
 = label :game, :title, 'Title'
 = text_field :game, :title
-
+%p
 = label :game, :esrb, 'ESRB Rating'
 = select :game, :esrb, Game.all_esrb
-
+%p
 = label :game, :release_date, 'Released On'
 = date_select :game, :release_date
-
+%p
 = label :game, :console, 'Console'
 = select :game, :console, Game.all_consoles
-
+%p
 = label :game, :players, 'Players'
 = text_field :game, :players
-
+%p
 = label :game, :description, 'Description'
 = text_field :game, :description
